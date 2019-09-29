@@ -4,7 +4,7 @@
 
 std::map<std::string, IPlayer*> PlayerFactory::m_map = std::map<std::string, IPlayer*>();
 
-// Íæ¼ÒÀàÐÍºÍÎäÆ÷
+// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Íºï¿½ï¿½ï¿½ï¿½ï¿½
 static std::string s_playerType[2] = { "T", "CT" };
 static std::string s_weapons[4] = { "AK-47", "Maverick", "Gut Knife", "Desert Eagle" };
 
@@ -19,25 +19,25 @@ int main()
 	GET_ARRAY_LEN(s_playerType, playerLen);
 	GET_ARRAY_LEN(s_weapons, weaponsLen);
 
-	// ¼ÙÉè£¬ÓÎÏ·ÖÐÓÐÊ®Î»Íæ¼Ò
+	// ï¿½ï¿½ï¿½è£¬ï¿½ï¿½Ï·ï¿½ï¿½ï¿½ï¿½Ê®Î»ï¿½ï¿½ï¿½
 	for (int i = 0; i < 10; i++) {
-		// »ñÈ¡Ëæ»úÍæ¼ÒºÍÎäÆ÷
+		// ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½Òºï¿½ï¿½ï¿½ï¿½ï¿½
 		int typeIndex = rand() % playerLen;
 		int weaponIndex = rand() % weaponsLen;
 		std::string type = s_playerType[typeIndex];
 		std::string weapon = s_weapons[weaponIndex];
 
-		// »ñÈ¡Íæ¼Ò
+		// ï¿½ï¿½È¡ï¿½ï¿½ï¿½
 		IPlayer *p = PlayerFactory::getPlayer(type);
 
-		// ´ÓÎäÆ÷¿âÖÐËæ»ú·ÖÅäÎäÆ÷
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		p->assignWeapon(weapon);
 
-		// ÅÉÍæ¼ÒÈ¥Ö´ÐÐÈÎÎñ
+		// ï¿½ï¿½ï¿½ï¿½ï¿½È¥Ö´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		p->mission();
 	}
 
-	getchar();
+	//getchar();
 
 	return 0;
 }

@@ -10,7 +10,7 @@ int main()
 	IHandler *director = new Director();
 	IHandler *ceo = new CEO();
 
-	// Ö°ÔðÁ´£º¾­Àí -> ×Ü¼à -> ×Ü²Ã
+	// Ö°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ -> ï¿½Ü¼ï¿½ -> ï¿½Ü²ï¿½
 	manager->SetSuccessor(director);
 	director->SetSuccessor(ceo);
 
@@ -23,7 +23,7 @@ int main()
 	SAFE_DELETE(director);
 	SAFE_DELETE(ceo);
 
-	getchar();
+	//getchar();
 
 	return 0;
-}
+} 

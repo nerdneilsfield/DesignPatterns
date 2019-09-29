@@ -44,7 +44,7 @@ int main()
     SAFE_DELETE(pBike);
     SAFE_DELETE(pFactory);
 
-    getchar();
+    //getchar();
 
     return 0;
 }

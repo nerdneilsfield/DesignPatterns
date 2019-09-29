@@ -30,7 +30,7 @@ int main()
     SAFE_DELETE(pObserver2);
     SAFE_DELETE(pSubject);
 
-    getchar();
+    //getchar();
 
     return 0;
 }

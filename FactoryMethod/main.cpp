@@ -32,7 +32,7 @@ int main()
     SAFE_DELETE(pCar);
     SAFE_DELETE(pFactory);
 
-    getchar();
+    //getchar();
 
     return 0;
 }

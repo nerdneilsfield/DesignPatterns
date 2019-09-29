@@ -1,0 +1,27 @@
+cmake_minimum_required(VERSION 3.10)
+
+add_compile_options("--std=c++14")
+
+project(DesignPatterns)
+
+
+add_subdirectory(AbstractFactory/)
+add_subdirectory(Adapter/)
+add_subdirectory(Bridge/)
+add_subdirectory(Builder/)
+add_subdirectory(ChainOfResponsibility/)
+add_subdirectory(Composite/)
+add_subdirectory(Decorator/)
+add_subdirectory(Facade/)
+add_subdirectory(FactoryMethod/)
+add_subdirectory(Flyweight/)
+add_subdirectory(Mediator/)
+add_subdirectory(Memento/)
+add_subdirectory(Observer/)
+add_subdirectory(Prototype/)
+add_subdirectory(Proxy/)
+add_subdirectory(SimpleFactory/)
+add_subdirectory(Singleton/)
+add_subdirectory(Strategy/)
+add_subdirectory(TemplateMethod/)
+add_subdirectory(Visitor/)

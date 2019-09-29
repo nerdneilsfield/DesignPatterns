@@ -6,18 +6,18 @@
 
 int main()
 {
-	// °¢ÀïÐ£ÕÐ
+	// ï¿½ï¿½ï¿½ï¿½Ð£ï¿½ï¿½
 	Company *alibaba = new Alibaba();
 	alibaba->Recruit();
 
-	// ÌÚÑ¶Ð£ÕÐ
+	// ï¿½ï¿½Ñ¶Ð£ï¿½ï¿½
 	Company *tencent = new Tencent();
 	tencent->Recruit();
 
 	SAFE_DELETE(tencent);
 	SAFE_DELETE(alibaba);
 
-	getchar();
+	//getchar();
 
 	return 0;
 }

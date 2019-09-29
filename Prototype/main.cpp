@@ -20,7 +20,7 @@ int main()
 	SAFE_DELETE(pSWK2);
 	SAFE_DELETE(pSWK);
 
-	getchar();
+	//getchar();
 
     return 0;
 }

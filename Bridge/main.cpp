@@ -7,22 +7,22 @@
 
 int main()
 {
-	// ´´½¨µçÆ÷ - µçµÆ¡¢·çÉÈ
+	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ - ï¿½ï¿½Æ¡ï¿½ï¿½ï¿½ï¿½ï¿½
 	IElectricalEquipment *light = new Light();
 	IElectricalEquipment *fan = new Fan();
 
 	/**
-	* ´´½¨¿ª¹Ø - À­Á´Ê½¿ª¹Ø¡¢Á½Î»¿ª¹Ø
-	* ½«À­Á´Ê½¿ª¹ØºÍµçµÆ¹ØÁªÆðÀ´£¬½«Á½Î»¿ª¹ØºÍ·çÉÈ¹ØÁªÆðÀ´
+	* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ - ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½Ø¡ï¿½ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½
+	* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ØºÍµï¿½Æ¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½ï¿½ØºÍ·ï¿½ï¿½È¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	**/
 	ISwitch *pullChain = new PullChainSwitch(light);
 	ISwitch *twoPosition = new TwoPositionSwitch(fan);
 
-	// ¿ªµÆ¡¢¹ØµÆ
+	// ï¿½ï¿½ï¿½Æ¡ï¿½ï¿½Øµï¿½
 	pullChain->On();
 	pullChain->Off();
 
-	// ´ò¿ª·çÉÈ¡¢¹Ø±Õ·çÉÈ
+	// ï¿½ò¿ª·ï¿½ï¿½È¡ï¿½ï¿½Ø±Õ·ï¿½ï¿½ï¿½
 	twoPosition->On();
 	twoPosition->Off();
 
@@ -31,7 +31,7 @@ int main()
 	SAFE_DELETE(fan);
 	SAFE_DELETE(light);
 
-	getchar();
+	//getchar();
 
 	return 0;
 }

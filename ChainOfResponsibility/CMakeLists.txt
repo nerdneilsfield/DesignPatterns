@@ -1,0 +1,2 @@
+add_executable(ChainOfResponsibility main.cpp)
+target_include_directories(ChainOfResponsibility PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/)

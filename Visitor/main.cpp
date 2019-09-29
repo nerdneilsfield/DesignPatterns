@@ -9,19 +9,19 @@ int main()
 {
 	City *city = new City();
 
-	// ¾°µã - ÖÓÂ¥¡¢±øÂíÙ¸
+	// ï¿½ï¿½ï¿½ï¿½ - ï¿½ï¿½Â¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ù¸
 	IPlace *bellTower = new BellTower();
 	IPlace *warriors = new TerracottaWarriors();
 
-	// ·ÃÎÊÕß - ÓÎ¿Í¡¢Çå½à¹¤
+	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ - ï¿½Î¿Í¡ï¿½ï¿½ï¿½à¹¤
 	IVisitor *tourist = new Tourist();
 	IVisitor *cleaner = new Cleaner();
 
-	// Ìí¼Ó¾°µã
+	// ï¿½ï¿½ï¿½Ó¾ï¿½ï¿½ï¿½
 	city->Attach(bellTower);
 	city->Attach(warriors);
 
-	// ½ÓÊÜ·ÃÎÊ
+	// ï¿½ï¿½ï¿½Ü·ï¿½ï¿½ï¿½
 	city->Accept(tourist);
 	city->Accept(cleaner);
 
@@ -31,7 +31,7 @@ int main()
 	SAFE_DELETE(bellTower);
 	SAFE_DELETE(city);
 
-	getchar();
+	//getchar();
 
 	return 0;
 }

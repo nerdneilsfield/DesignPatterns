@@ -39,7 +39,7 @@ int main()
 	SAFE_DELETE(pYogaBuilder);
 	SAFE_DELETE(pDirecror);
 
-	getchar();
+	//getchar();
 
     return 0;
 }

@@ -7,25 +7,25 @@
 
 int main()
 {
-	// ·¿¶«
+	// ï¿½ï¿½ï¿½ï¿½
 	IColleague *landlord = new ConcreteColleague("Tom");
 
-	// ×â¿Í
+	// ï¿½ï¿½ï¿½
 	IColleague *jerry = new ConcreteColleague("Jerry");
 	IColleague *tuffy = new ConcreteColleague("Tuffy");
 
-	// ÖÐ½éÕß - Ìí¼Ó×â¿Í
+	// ï¿½Ð½ï¿½ï¿½ï¿½ - ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	ConcreteMediator mediator;
 	mediator.registerColleague(jerry);
 	mediator.registerColleague(tuffy);
 
-	// ·¿¶«Í¨¹ýÖÐ½é½«ÏûÏ¢·¢ËÍ³öÈ¥
+	// ï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½ï¿½Ð½é½«ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½Í³ï¿½È¥
 	landlord->sendMessage(mediator, "Xi'erqi, two bedroom house, 6000/month.");
 
 	SAFE_DELETE(jerry);
 	SAFE_DELETE(tuffy);
 
-	getchar();
+	//getchar();
 
 	return 0;
 }

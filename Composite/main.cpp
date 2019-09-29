@@ -3,40 +3,40 @@
 
 int main()
 {
-	// ´´½¨Ò»¸öÊ÷ÐÎ½á¹¹
-	// ´´½¨¸ù½Úµã
-	Component *pRoot = new Composite("½­ºþ¹«Ë¾£¨ÈÎÎÒÐÐ£©");
+	// ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Î½á¹¹
+	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Úµï¿½
+	Component *pRoot = new Composite("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð£ï¿½");
 
-	// ´´½¨·ÖÖ§
-	Component *pDepart1 = new Composite("ÈÕÔÂÉñ½Ì£¨¶«·½²»°Ü£©");
-	pDepart1->Add(new Leaf("¹âÃ÷×óÊ¹£¨ÏòÎÊÌì£©"));
-	pDepart1->Add(new Leaf("¹âÃ÷ÓÒÊ¹£¨ÇúÑó£©"));
+	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö§
+	Component *pDepart1 = new Composite("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü£ï¿½");
+	pDepart1->Add(new Leaf("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ì£©"));
+	pDepart1->Add(new Leaf("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"));
 	pRoot->Add(pDepart1);
 
-	Component *pDepart2 = new Composite("ÎåÔÀ½£ÅÉ£¨×óÀä²õ£©");
-	pDepart2->Add(new Leaf("áÔÉ½£¨×óÀä²õ£©"));
-	pDepart2->Add(new Leaf("ºâÉ½£¨Äª´ó£©"));
-	pDepart2->Add(new Leaf("»ªÉ½£¨ÔÀ²»Èº£©"));
-	pDepart2->Add(new Leaf("Ì©É½£¨ÌìÃÅµÀ³¤£©"));
-	pDepart2->Add(new Leaf("ºãÉ½£¨¶¨ÏÐÊ¦Ì«£©"));
+	Component *pDepart2 = new Composite("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+	pDepart2->Add(new Leaf("ï¿½ï¿½É½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"));
+	pDepart2->Add(new Leaf("ï¿½ï¿½É½ï¿½ï¿½Äªï¿½ï¿½"));
+	pDepart2->Add(new Leaf("ï¿½ï¿½É½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Èºï¿½ï¿½"));
+	pDepart2->Add(new Leaf("Ì©É½ï¿½ï¿½ï¿½ï¿½ï¿½Åµï¿½ï¿½ï¿½ï¿½ï¿½"));
+	pDepart2->Add(new Leaf("ï¿½ï¿½É½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¦Ì«ï¿½ï¿½"));
 	pRoot->Add(pDepart2);
 
-	// Ìí¼ÓºÍÉ¾³ýÒ¶×Ó
-	pRoot->Add(new Leaf("ÉÙÁÖ£¨·½Ö¤´óÊ¦£©"));
-	pRoot->Add(new Leaf("Îäµ±£¨³åÐéµÀ³¤£©"));
-	Component *pLeaf = new Leaf("Çà³Ç£¨Óà²×º££©");
+	// ï¿½ï¿½ï¿½Óºï¿½É¾ï¿½ï¿½Ò¶ï¿½ï¿½
+	pRoot->Add(new Leaf("ï¿½ï¿½ï¿½Ö£ï¿½ï¿½ï¿½Ö¤ï¿½ï¿½Ê¦ï¿½ï¿½"));
+	pRoot->Add(new Leaf("ï¿½äµ±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"));
+	Component *pLeaf = new Leaf("ï¿½ï¿½Ç£ï¿½ï¿½ï¿½×ºï¿½ï¿½ï¿½");
 	pRoot->Add(pLeaf);
 
-	// Ð¡³ó£¬Ö±½Ó²Ãµô
+	// Ð¡ï¿½ï¿½Ö±ï¿½Ó²Ãµï¿½
 	pRoot->Remove(pLeaf);
 
-	// µÝ¹éµØÏÔÊ¾×éÖ¯¼Ü¹¹
+	// ï¿½Ý¹ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½Ö¯ï¿½Ü¹ï¿½
 	pRoot->Operation(1);
 
-	// É¾³ý·ÖÅäµÄÄÚ´æ
+	// É¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú´ï¿½
 	SAFE_DELETE(pRoot);
 
-	getchar();
+	//getchar();
 
 	return 0;
 }

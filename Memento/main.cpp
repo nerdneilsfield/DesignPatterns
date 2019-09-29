@@ -10,29 +10,29 @@ int main()
 	Life *life = new Life();
 	PandoraBox *box = new PandoraBox(life);
 
-	// ÉèÖÃ²¢±£´æÒ»¸öÀúÊ·Ê±¼ä
+	// ï¿½ï¿½ï¿½Ã²ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Ê·Ê±ï¿½ï¿½
 	life->SetDateTime("2000/10/01 00:00:00");
 	box->Save();
 
-	// ÉèÖÃ²¢±£´æÒ»¸öÀúÊ·Ê±¼ä
+	// ï¿½ï¿½ï¿½Ã²ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Ê·Ê±ï¿½ï¿½
 	life->SetDateTime("2010/10/01 00:00:00");
 	box->Save();
 
-	// ÉèÖÃÒ»¸öÀúÊ·Ê±¼ä
+	// ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Ê·Ê±ï¿½ï¿½
 	life->SetDateTime("2018/10/01 00:00:00");
 
-	// ´©Ô½
+	// ï¿½ï¿½Ô½
 	box->Undo();
 	std::cout << "Actual date time is " << life->GetDateTime() << std::endl;
 
-	// ÔÙ´Î´©Ô½
+	// ï¿½Ù´Î´ï¿½Ô½
 	box->Undo();
 	std::cout << "Actual date time is " << life->GetDateTime() << std::endl;
 
 	SAFE_DELETE(life);
 	SAFE_DELETE(box);
 
-	getchar();
+	//getchar();
 
 	return 0;
 }

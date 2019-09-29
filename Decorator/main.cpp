@@ -50,7 +50,7 @@ int main()
     SAFE_DELETE(pCreamDR);
     SAFE_DELETE(pDarkRoast);
 
-    getchar();
+    //getchar();
 
     return 0;
 }

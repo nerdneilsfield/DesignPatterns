@@ -10,7 +10,7 @@ int main()
 
     SAFE_DELETE(pAdapter);
 
-    getchar();
+    //getchar();
 
     return 0;
 }

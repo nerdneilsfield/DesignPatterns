@@ -12,7 +12,7 @@ int main()
 
 	SAFE_DELETE(proxy);
 
-	getchar();
+	//getchar();
 
 	return 0;
 }

@@ -7,7 +7,7 @@
 
 int main()
 {
-	// ²ßÂÔÖ®¼ä¿ÉÒÔÏà»¥Ìæ»»
+	// ï¿½ï¿½ï¿½ï¿½Ö®ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½à»¥ï¿½æ»»
 	IStrategy *bike = new BikeStrategy();
 	IStrategy *car = new CarStrategy();
 	IStrategy *train = new TrainStrategy();
@@ -28,7 +28,7 @@ int main()
 	SAFE_DELETE(carContext);
 	SAFE_DELETE(trainContext);
 
-	getchar();
+	//getchar();
 
 	return 0;
 }

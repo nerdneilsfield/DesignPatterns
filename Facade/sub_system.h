@@ -3,7 +3,13 @@
 
 #include <iostream>
 #include <string>
+
+#ifdef _WIN32
 #include <windows.h>
+#else
+#include <unistd.h>
+#define Sleep(x) usleep(x)
+#endif // DEBUG
 
 const std::string c_stateToStrCourier[] = { "收到", "验证可达性", "分配人员", "派送包裹", "获取交货确认", "完成" };
 const std::string c_stateToStrVendor[] = { "收到", "确认库存", "从仓库得到物品", "包装", "联系快递员", "完成" };

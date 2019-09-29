@@ -12,7 +12,7 @@ int main()
 
     std::cout << "********** 订单完成，跟踪次数：" << facade.followupNum() << " **********" << std::endl;
 
-    getchar();
+    //getchar();
 
     return 0;
 }
