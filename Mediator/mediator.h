@@ -2,6 +2,7 @@
 
 #include "colleague.h"
 #include <list>
+#include <string>
 
 class IColleague;
 
